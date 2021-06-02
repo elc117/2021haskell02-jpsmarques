@@ -32,3 +32,18 @@ bigCircles x r = filter (isCircleBigger x) r
 --6
 idadesEm :: [Int] -> Int -> [Int]
 idadesEm idades ano = map (\idades -> ano - idades)
+
+--7
+comecacomA :: String -> String
+comecacomA string = if head == 'A' then "Super"++string
+
+changeNames :: [String] -> [String]
+changeNames nomes = map comecacomA string
+
+---8
+isShort :: String -> Bool
+isLongWord s = length s < 5
+
+onlyShorts :: [String] -> [String]
+onlyShorts string = filter isShort string
+
